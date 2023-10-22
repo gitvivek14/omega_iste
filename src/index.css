@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.landing{
+    background-image: url('assets/images/bg3.png');
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+.mask1{
+    box-shadow:0 0 20px #269cbc, 0 0 40px #269cbc;
+}
+.mask2{
+    box-shadow:0 0 50px #ff7b2a, 0 0 80px #ff7;
+}
+.mask3{
+    box-shadow:0 0 20px #e26040,0 0 40px #e26040;
+}
+.spo{
+    box-shadow: inset 0 0 34.0148px hsla(42,95%,70%,.05), inset 0 2.26765px 2.26765px rgba(252,212,92,.15);
+}
+@layer base{
+    .font-outline-4{
+        -webkit-text-stroke: 2px white;
+    }
+
+
+
+}
+
+
+@font-face {
+    font-family: "Gotham";
+    src: local("GothamBold"),
+     url("./fonts/Gotham/Gotham-Bold.otf") format("truetype");
+    font-weight: bold;
+   }
+   
+   @font-face {
+    font-family: "Steel";
+    src: local("SteelBold"),
+     url("./fonts/Steel/steel-steel-700.ttf") format("truetype");
+    font-weight: bold;
+   }
+   @font-face {
+    font-family: "ClashDisplay";
+    src: local("ClashDisplay"),
+     url("./fonts/ClashDisplay/ClashDisplay-Bold.otf") format("truetype");
+    font-weight: bold;
+   }
+   
