@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom'
 import logo from '../assets/images/logo.png'
 import { Button } from '@radix-ui/themes'
 import {MdOutlinePeopleOutline} from 'react-icons/md'
+import omega from '../assets/images/omega.jpg'
 
 const NNavbar = () => {
     const NavLinks = [
@@ -34,6 +35,9 @@ const NNavbar = () => {
               </img>
           </Link> */}
           {/* navlinks */}
+          <div>
+            <img src={omega} width={140} height={140} className='mix-blend-multiply'></img>
+          </div>
           <div>
           <nav>
               <ul className='flex flex-row gap-x-6 items-center justify-center mx-auto'>
