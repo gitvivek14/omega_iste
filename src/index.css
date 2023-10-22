@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .landing{
-    background-image: url('assets/images/bg3.png');
+    background-image: url('assets/images/bg4.jpg');
     background-repeat: no-repeat;
     background-size: cover;  
 }
@@ -23,9 +23,6 @@
     .font-outline-4{
         -webkit-text-stroke: 2px white;
     }
-
-
-
 }
 
 
@@ -48,4 +45,10 @@
      url("./fonts/ClashDisplay/ClashDisplay-Bold.otf") format("truetype");
     font-weight: bold;
    }
+   @font-face {
+    font-family: 'Monaco';
+    src: local("Monaco"),url("./fonts/Monaco/Monaco.woff") format('woff');
+    font-style: normal;
+    font-weight: normal;
+    }
    

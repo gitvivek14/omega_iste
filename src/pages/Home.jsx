@@ -7,6 +7,9 @@ import mask from '../assets/images/maskgroup2.png';
 import india from '../assets/images/indian.png';
 import Footer from '../components/Footer'
 import ComputersCanvas from '../components/canvas/Computer'
+import omega from '../assets/images/omega_nobg.jpg'
+import RegistrationModal from '../components/RegistrationModal'
+import { ModalOverlay, useDisclosure } from '@chakra-ui/react'
 const Home = () => {
     const data = [
         {
@@ -34,41 +37,69 @@ const Home = () => {
             'description':"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inc",
         },
     ]
+    const OverlayOne = () => (
+        <ModalOverlay
+        bg='blackAlpha.300'
+          backdropFilter='blur(10px) hue-rotate(90deg)'
+        />
+      )
+    const { isOpen, onOpen, onClose } = useDisclosure()
+    const [overlay, setOverlay] = React.useState(<OverlayOne />)
+  
   return (
-    <>
-    <div className='flex flex-col items-center justify-center'>
-    <h1 className=' font-bold text-[10rem] font-outline-4 text-transparent font-face-sm'>OMEGA</h1>
-    </div>
+    
+    <div className='w-full h-full'>
 
-    {/* <div className='mt-3 w-full flex items-center'>
-    {/* <ComputersCanvas></ComputersCanvas> */}
+    
+    <div className='flex flex-col items-center justify-center w-full mx-auto relative'>
+        <div className='w-full mx-auto'>
+            <img src={omega} className='w-full h-full bg-contain mix-blend-difference' ></img>
+        </div>
+
+        <div className='flex justify-center items-center absolute z-10 -bottom-11 mx-auto'>
+            <button className='text-center text-[13px] px-6 py-3 
+            rounded-md font-bold
+             bg-yellow-400 text-black' 
+             onClick={()=>{
+                setOverlay(<OverlayOne/>)
+                onOpen();
+             }}
+             >
+                Register
+            </button>
+    </div>
+    {/* <h1 className=' font-bold text-[10rem] font-outline-4 text-transparent font-face-sm'>OMEGA</h1> */}
+    </div>
   
 
-    <div className='flex justify-center items-center'>
-        <CTAButton active={true} linkto={'/'} >
-            Register
-        </CTAButton>
-    </div>
+    
 
 
 
 
     {/*About-Us Section */}
     <div className='w-11/12 flex flex-col mx-auto items-start justify-start'>
-        <div className=' flex w-10/12'>
-            <h1 className='text-yellow-50 font-face-sm font-semibold text-[3rem] space-x-2'>About us</h1>
+        <div className=' flex w-full items-center justify-center mt-10'>
+            <h1 className='text-yellow-50 font-face-sm font-semibold text-[3rem] space-x-2 mx-auto'>About The Event</h1>
         </div>
-    <div className='w-10/12 bg-[#1c1334b3] border
-     border-blue-100 h-[400px] flex justify-start items-center mx-auto mt-6 flex-col'>
-        <div className='w-full flex items-center justify-start p-4 gap-3'>
+        {/* //bg-[#1c1334b3] */}
+    <div className='w-10/12  bg-transparent border-[1px] border-solid border-orange-300
+     max-h-max flex justify-start items-center mx-auto mt-6 flex-col landing1'>
+        {/* that blue ball */}
+        {/* <div className='w-full flex items-center justify-start p-4 gap-3'>
             <img src={mask} className='mask1 rounded-full'></img>
             <p className='font-bold text-[1.5rem]
              hover:bg-blue-100 hover:text-white transition-all duration-200 ease-in-out
               text-blue-100 font-face-gm'>About the Event</p>
-        </div>
+        </div> */}
 
-        <div className='text-white p-4'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus aliquid cum voluptas eligendi! Pariatur, deleniti esse est eligendi sint quas? Reprehenderit, explicabo culpa! Quaerat beatae enim perspiciatis aperiam aliquid illo.
+        <div className='text-white p-7 text-[20px] font-face-mm'>
+        OMEGA, by the Indian Society for Technical Education (ISTE), is a 
+        high-stakes coding competition showcasing top technical talent. 
+        It consists of a challenging online Preliminary Round with three programming questions. 
+        The top performers advance to a four-hour, in-person showdown featuring one-on-one coding 
+        challenges.
+        The fastest and most accurate participants progress, culminating in two winners
         </div>
     </div>
 
@@ -93,7 +124,6 @@ const Home = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus aliquid cum voluptas eligendi! Pariatur, deleniti esse est eligendi sint quas? Reprehenderit, explicabo culpa! Quaerat beatae enim perspiciatis aperiam aliquid illo.
         </div>
     </div>
-
     </div>
    
     
@@ -122,20 +152,15 @@ const Home = () => {
             })
         }
 
-    </div>
-
-       
-
-
-       
+    </div>   
     </div>
     <Footer></Footer>
-    
-    </>
+    {
+        isOpen && <RegistrationModal isOpen={isOpen} onClose={onClose} overlay={overlay}></RegistrationModal>
+    }
+    </div>
 
-
-
-    
+   
     
   )
 }

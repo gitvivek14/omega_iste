@@ -7,10 +7,9 @@ import Home from "./pages/Home";
 function App() {
   return (
     <div className='w-[100vw] h-[100vh] 
-    min-h-screen overflow-y-auto landing'>
+    min-h-screen overflow-y-auto bg-black landing'>
       <NNavbar></NNavbar>
       <Home></Home>
-      
     </div>
   );
 }

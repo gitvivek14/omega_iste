@@ -9,4 +9,33 @@
   .font-face-cm {
     font-family: "ClashDisplay";
   }
+  .font-face-mm {
+    font-family: "Monaco";
+  }
+
+ .landing{
+    background-image: url('assets/images/sponsorsbg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;  
+    z-index: -10;
+   
+} 
+.landing1{
+  background-image: url('assets/images/bg6.jpg');
+  background-repeat: no-repeat;
+  background-size: auto;
+  margin: auto;
+  align-items: center;  
+  /* mix-blend-mode: screen; */
   
+ 
+} 
+
+.border-home{
+  border: 1px solid;
+ border-image:linear-gradient(150.64deg,#e26040,#b9b9b9);
+}
+.form-style {
+  @apply rounded-lg bg-richblack-700 p-3 text-[16px] leading-[24px] text-richblack-5 shadow-[0_1px_0_0] shadow-white/50 placeholder:text-richblack-200 focus:outline-none;
+}
+   
