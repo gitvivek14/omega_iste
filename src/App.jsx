@@ -8,8 +8,8 @@ function App() {
   return (
     <div className='w-[100vw] h-[100vh] 
     min-h-screen overflow-y-auto landing'>
-      <NNavbar></NNavbar>
-      <Home></Home>
+      <NNavbar></NNavbar> //this is NavBar
+      <Home></Home>   //Hero to Footer Section
       
     </div>
   );
