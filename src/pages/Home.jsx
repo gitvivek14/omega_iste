@@ -10,6 +10,7 @@ import ComputersCanvas from '../components/canvas/Computer'
 import omega from '../assets/images/omega_nobg.jpg'
 import RegistrationModal from '../components/RegistrationModal'
 import { ModalOverlay, useDisclosure } from '@chakra-ui/react'
+import Contact from './Contact'
 const Home = () => {
     const data = [
         {
@@ -156,6 +157,7 @@ const Home = () => {
 
     </div>   
     </div>
+    <Contact></Contact>
     <Footer></Footer>
     {
         isOpen && <RegistrationModal isOpen={isOpen} onClose={onClose} overlay={overlay}></RegistrationModal>

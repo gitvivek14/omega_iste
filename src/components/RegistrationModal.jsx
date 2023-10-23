@@ -23,7 +23,6 @@ const RegistrationModal = ({isOpen,onClose,overlay}) => {
 
     const handleSubmit=(e)=>{
         e.preventDefault();
-        console.log("submitting..");
         dispatch(registeruser(name,rollno,email));
     }
 
