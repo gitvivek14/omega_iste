@@ -1,7 +1,7 @@
 import { toast } from "react-hot-toast";
 import {apiconnector} from "../apiConnector"
 
-import {setLoading,setUser} from "../../slices/userSlice"
+import {setLoading} from "../../slices/userSlice"
 
 export function registeruser(fullname,rollno,email){
     return async(dispatch)=>{
@@ -14,14 +14,26 @@ export function registeruser(fullname,rollno,email){
                 fullname,rollno,email
             }
             )
-            console.log("login api",response.data);
+            console.log("printing status",response.status)
+            toast.success("Registered Successfully")
             
         }catch(e){
             console.log("loginerror",e)
-            toast.error("Couldn't Register")
+            if(e.response.status==405){
+                toast.error("User Already Registered");
+                toast.dismiss(toastID)
+                return;
+            }
+            if(e.response.status==403){
+                toast.error("Fill in all the Details");
+                toast.dismiss(toastID)
+                return;
+            }
+
+            // toast.error("Couldn't Register")
         }
         dispatch(setLoading(false))
-            toast.dismiss(toastID)
+        toast.dismiss(toastID)
     }
 
 }
