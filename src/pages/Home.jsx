@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar'
 import { Code } from '@radix-ui/themes'
 import CTAButton from '../components/CTAButton'
 import mask from '../assets/images/maskgroup2.png';
-import india from '../assets/images/indian.png';
+import india from '../assets/sponsors/coding-ninja.png';
 import Footer from '../components/Footer'
 import ComputersCanvas from '../components/canvas/Computer'
 import omega from '../assets/images/omega_nobg.jpg'
@@ -52,8 +52,8 @@ const Home = () => {
 
     
     <div className='flex flex-col items-center justify-center w-full mx-auto relative'>
-        <div className='w-full mx-auto'>
-            <img src={omega} className='w-full h-full bg-contain mix-blend-difference' ></img>
+        <div className='w-full mx-auto flex items-center justify-center'>
+            <img src={omega} className='w-full h-full bg-contain mix-blend-difference mx-auto' ></img>
         </div>
 
         <div className='flex justify-center items-center absolute z-10 -bottom-11 mx-auto'>
@@ -138,12 +138,14 @@ const Home = () => {
     {
             data.map((card,idx)=>{
                 return(
-                    <div className='w-60 h-50 rounded-2xl flex-col p-5 backdrop-blur-md spo'>
+                    <div className='w-60 h-50 rounded-lg flex-col p-5 backdrop-blur-sm spo 
+                     hover:scale-125 shadow-lg shadow-purple-400 ease-in duration-200 hover:shadow-orange-400 hover:shadow-md transition-all'>
                         <div className='flex items-center flex-col justify-center gap-4 rounded-xl '>
                             <img src={india} className='w-full h-full'></img>
+                            <div className='w-full mx-auto h-[1px] text-white bg-white'></div>
                         </div>
                         <div className='flex flex-col items-center justify-center mt-4'>
-                            <p className='font-bold text-lg text-white'>Nike</p>
+                            <p className='font-semibold text-lg text-white'>Coding Ninja</p>
                         </div>
 
                     </div>
