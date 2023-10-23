@@ -24,17 +24,21 @@ const Contact = () => {
      
   }
   const handlesubmit = (e)=>{
-    e.preventDefault;
+    e.preventDefault();
+    setload(true)
     emailjs.send(
+      'service_ewu6933',
       // service id
+      'template_sa6wwpq',
       // template,
       {
         from_name:form.name,
         to_name:'Vivek',
         from_email:form.email,
-        to_email:'',
+        to_email:'streberplatzedu@gmail.com',
         message:form.message,
-      }
+      },
+      '0Ga3Eur_fAR-Ioy2T'
       // id
     ).then(()=>{
       setload(false)
@@ -44,13 +48,16 @@ const Contact = () => {
         email:'',
         message:''
       })
+    },(error)=>{
+      setload(false)
+      alert('Something went Wrong')
     })
   }
 
   return (
     <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
       <motion.div variants={slideIn('left',"tween",0.2,1)} className='flex-[0.75] bg-black-100 p-8 rounded-2xl '>
-        <p className={`${styles.sectionSubText}`}>Get in touch</p>
+        <p className={`${styles.sectionSubText} text-white`}>Get in touch</p>
         <h3 className={`${styles.sectionHeadText}`}>Contact.</h3>
         <form ref={formref} onSubmit={handlesubmit} className='mt-12 
         flex flex-col
@@ -60,14 +67,14 @@ const Contact = () => {
             <input type='text' name='name' value={form.name} 
             onChange={handlechange} 
             placeholder="What's your Name?" 
-            className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white outline-none border-none rounded-lg font-medium'></input>
+            className='bg-tertiary py-4 px-6 placeholder:text-secondary text-black outline-none border-none rounded-lg font-medium'></input>
           </label>
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your Email</span>
             <input type='text' name='email' value={form.email} 
             onChange={handlechange} 
             placeholder="What's your Email?" 
-            className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white outline-none border-none rounded-lg font-medium'></input>
+            className='bg-tertiary py-4 px-6 placeholder:text-secondary text-black outline-none border-none rounded-lg font-medium'></input>
           </label>
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>
@@ -77,11 +84,11 @@ const Contact = () => {
             value={form.message} 
             onChange={handlechange} 
             placeholder="Type Message?" 
-            className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white outline-none border-none rounded-lg font-medium'></textarea>
+            className='bg-tertiary py-4 px-6 placeholder:text-secondary text-black outline-none border-none rounded-lg font-medium'></textarea>
           </label>
           <button type='submit' 
           className='w-fit outline-none
-           text-white shadow-md font-bold shadow-primary
+           text-white shadow-md font-bold shadow-yellow-400
             py-3 px-8 bg-tertiary rounded-xl'>
             {laoding?'Sending..':'Send'} </button>
         </form>
