@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import {Link, useNavigate} from 'react-router-dom'
 import logo from '../assets/images/logo.png'
 import {MdOutlinePeopleOutline} from 'react-icons/md'
 import omega from '../assets/images/omega.jpg'
@@ -7,7 +7,9 @@ import {NavBarLinks} from "../data/NavBarLinks"
 import { ModalOverlay, useDisclosure } from '@chakra-ui/react'
 import RegistrationModal from './RegistrationModal'
 
+
 const NNavbar = () => {
+    const navigate = useNavigate();
     const OverlayOne = () => (
         <ModalOverlay
         bg='blackAlpha.300'
@@ -33,7 +35,9 @@ const NNavbar = () => {
                               <li key={idx}>
                                 <Link to={link.path} className='transition-all duration-200 ease-in-out'>
                                   <p className='text-white hover:text-blue-100 font-face-gm
-                                  transition-all ease-in duration-100 hover:scale-105'>
+                                  transition-all ease-in duration-100 hover:scale-105' onClick={()=>{
+                                    navigate(`${link.path}`)
+                                  }}>
                                       {link.title}
                                   </p>
                                   </Link>
