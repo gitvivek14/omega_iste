@@ -10,16 +10,20 @@ import { configureStore } from "@reduxjs/toolkit";
 import rootReducer from "../src/reducer/index"
 import { Provider } from "react-redux";
 import {Toaster} from "react-hot-toast"
+import { BrowserRouter } from "react-router-dom";
 const store = configureStore({
     reducer:rootReducer
 })
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render( 
     <Provider store = {store}>
+        <BrowserRouter>
         <Theme>
         <App />
         <Toaster></Toaster>
+
     </Theme>
+    </BrowserRouter>
     </Provider>
     
     

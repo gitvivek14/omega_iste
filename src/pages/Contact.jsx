@@ -67,14 +67,14 @@ const Contact = () => {
             <input type='text' name='name' value={form.name} 
             onChange={handlechange} 
             placeholder="What's your Name?" 
-            className='bg-tertiary py-4 px-6 placeholder:text-secondary text-black outline-none border-none rounded-lg font-medium'></input>
+            className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white outline-none border-none rounded-lg font-medium'></input>
           </label>
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your Email</span>
             <input type='text' name='email' value={form.email} 
             onChange={handlechange} 
             placeholder="What's your Email?" 
-            className='bg-tertiary py-4 px-6 placeholder:text-secondary text-black outline-none border-none rounded-lg font-medium'></input>
+            className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white outline-none border-none rounded-lg font-medium'></input>
           </label>
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>
@@ -84,16 +84,15 @@ const Contact = () => {
             value={form.message} 
             onChange={handlechange} 
             placeholder="Type Message?" 
-            className='bg-tertiary py-4 px-6 placeholder:text-secondary text-black outline-none border-none rounded-lg font-medium'></textarea>
+            className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white outline-none border-none rounded-lg font-medium'></textarea>
           </label>
           <button type='submit' 
           className='w-fit outline-none
-           text-white shadow-md font-bold shadow-yellow-400
+           text-white shadow-md font-bold shadow-blue-100
             py-3 px-8 bg-tertiary rounded-xl'>
             {laoding?'Sending..':'Send'} </button>
         </form>
       </motion.div>
-
       <motion.div variants={slideIn('right',"tween",0.2,1)}
       className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
      >

@@ -18,13 +18,8 @@ const NNavbar = () => {
     const [overlay, setOverlay] = React.useState(<OverlayOne />)
   return (
     <div className='w-full flex items-center justify-center h-20 flex-row 
-    backdrop-blur-lg text-white'>
+    backdrop-blur-3xl text-white'>
       <div className='w-11/12 items-center justify-between flex'>
-          {/* <Link to ='/'>
-              <img src= {logo} loading='lazy' width={28} height={28}>
-
-              </img>
-          </Link> */}
           {/* navlinks */}
           <div>
             <img src={omega} width={140} height={140} className='mix-blend-multiply'></img>
@@ -36,9 +31,12 @@ const NNavbar = () => {
                       NavBarLinks.map((link,idx)=>{
                           return(
                               <li key={idx}>
-                                  <p className='text-white'>
+                                <Link to={link.path} className='transition-all duration-200 ease-in-out'>
+                                  <p className='text-white hover:text-blue-100 font-face-gm
+                                  transition-all ease-in duration-100 hover:scale-105'>
                                       {link.title}
                                   </p>
+                                  </Link>
                               </li>
                           )
                       })
