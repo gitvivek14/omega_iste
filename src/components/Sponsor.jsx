@@ -1,5 +1,6 @@
 import React from 'react'
 import india from '../assets/sponsors/coding-ninja.png';
+import StarsCanvas from './canvas/Stars';
 const Sponsor = () => {
     const data = [
         {
@@ -33,7 +34,8 @@ const Sponsor = () => {
     <h1 className="text-[3rem] text-yellow-300 font-bold mx-auto font-face-sm">SPONSORS</h1>
     </div>
 
-<div className='flex flex-row items-center flex-wrap justify-center gap-10 w-10/12 max-w-full mt-10'>
+<div className='flex flex-row items-center flex-wrap justify-center gap-10 w-10/12 max-w-full mt-10 '>
+    
 {
         data.map((card,idx)=>{
             return(

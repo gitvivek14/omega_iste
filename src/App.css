@@ -13,23 +13,21 @@
     font-family: "Monaco";
   }
 
- .landing{
+ /* .landing{
     background-image: url('assets/images/sponsorsbg.jpg');
     background-repeat: no-repeat;
     background-size: cover;  
     z-index: -10;
    
-} 
-.landing1{
+}  */
+
+/* .landing1{
   background-image: url('assets/images/bg6.jpg');
   background-repeat: no-repeat;
   background-size: auto;
   margin: auto;
   align-items: center;  
-  /* mix-blend-mode: screen; */
-  
- 
-} 
+}  */
 
 .border-home{
   border: 1px solid;

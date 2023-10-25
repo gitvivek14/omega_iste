@@ -1,0 +1,75 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: whitesmoke;
+    position: sticky;
+    top:0;
+    background-color: black;
+}
+
+.Title{
+    font-size: 1.5 rem;
+    font-weight: bold;
+    margin: 1rem;
+    text-decoration: none;
+    color:teal;
+}
+ul{
+    display: flex;
+}
+ul li{
+    padding: 0 0.5rem;
+    margin: 0 0.5rem;
+    border-radius: 1rem;
+}
+
+.Menu{
+    position: absolute;
+    top:0.75rem;
+    right: 0.5rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2rem;
+    height: 2rem;
+}
+ nav .Menu .line{
+    height: 0.4rem;
+    width: 100%;
+    border-radius: 0.1rem;
+    background-color: whitesmoke;
+ }
+ ul a:hover{
+    color: green;
+ }
+
+@media (max-width: 480px) {
+    .Menu{
+        display: flex;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }    
+    nav ul{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 0.25rem;
+    }
+    nav ul li{
+        width:100%;
+        text-align: center;
+    }
+
+    nav ul.open{
+        display: flex;
+    }
+
+    nav ul li a{
+        margin: 0.2rem 0.5rem;
+    }
+    
+}

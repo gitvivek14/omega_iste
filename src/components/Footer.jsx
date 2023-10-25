@@ -1,5 +1,6 @@
 import React from 'react'
 import {AiFillFacebook, AiOutlineInstagram, AiOutlineLinkedin, AiOutlineTwitter} from 'react-icons/ai'
+import StarsCanvas from './canvas/Stars'
 const Footer = () => {
   return (
     <div className='w-11/12 flex flex-col mx-auto p-4 text-white'>

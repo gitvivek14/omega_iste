@@ -18,6 +18,7 @@ import { useNavigate } from 'react-router'
 import About from '../components/About'
 import RuleBook from '../components/RuleBook'
 import Sponsor from '../components/Sponsor'
+import StarsCanvas from '../components/canvas/Stars'
 const Home = () => {
     const navigate = useNavigate();
    
@@ -73,12 +74,21 @@ const Home = () => {
 
 
 
- 
-    <About></About>
+ <div className='relative z-0'>
+ <About></About>
    <RuleBook></RuleBook>
    <Sponsor></Sponsor>
-    <Contact></Contact>
+{/*   
+   <StarsCanvas></StarsCanvas> */}
+   <Contact></Contact>
     <Footer></Footer>
+
+ </div>
+   
+
+  
+   
+    
 
 
     {
