@@ -5,7 +5,7 @@ const RuleBook = () => {
   return (
     <div className='w-11/12 flex flex-col mx-auto mt-12'>
     <div className=' flex   flex-row items-center justify-center w-full'>
-            <h1 className='text-yellow-50 font-face-gm font-semibold text-[3rem] space-x-2 text-center mx-auto'>RuleBook</h1>
+            <h1 className='text-yellow-50 font-face-gm font-semibold text-[3rem] space-x-2 text-center mx-auto'>RULEBOOK</h1>
         </div>
 
         <div className='w-10/12 bg-[#1c1334b3] border
