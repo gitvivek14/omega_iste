@@ -21,7 +21,7 @@ const NNavbar = () => {
         />
       )
     const { isOpen, onOpen, onClose } = useDisclosure()
-    const [overlay, setOverlay] = React.useState(<OverlayOne />)
+    const [overlay, setOverlay] = React.useState(<OverlayOne/>)
 
     const toggleNavbar = ()=>{
       setOpen(!Open);
@@ -92,11 +92,11 @@ const NNavbar = () => {
             </button>
           </div>
       </div>
-      {
+    {
         isOpen && <RegistrationModal isOpen={isOpen} onClose={onClose} overlay={overlay}></RegistrationModal>
     }
     {
-      Open && <div className='absolute top-16 transition-all duration-100 ease-out'>
+      Open && <div className='absolute md:hidden top-7 z-50'>
         <Navbar></Navbar>
       </div>
     }

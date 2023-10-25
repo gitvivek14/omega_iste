@@ -11,7 +11,7 @@ function App() {
     min-h-screen overflow-y-auto bg-black landing relative z-0'>
       <NNavbar></NNavbar>
       <Home></Home>
-      {/* <StarsCanvas></StarsCanvas> */}
+      <StarsCanvas></StarsCanvas>
       
      
       

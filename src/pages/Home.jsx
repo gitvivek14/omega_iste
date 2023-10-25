@@ -3,8 +3,6 @@ import landingimg from '../assets/images/bg.jpg'
 import Navbar from '../components/Navbar'
 import { Code } from '@radix-ui/themes'
 import CTAButton from '../components/CTAButton'
-import mask from '../assets/images/maskgroup2.png';
-
 import Footer from '../components/Footer'
 import ComputersCanvas from '../components/canvas/Computer'
 import omega from '../assets/images/omega_nobg.jpg'
@@ -34,7 +32,7 @@ const Home = () => {
   
   return (
     
-    <div className='w-full h-full'>
+    <div className='w-full h-full -z-10'>
     <div className='flex flex-col items-center justify-center w-full mx-auto relative mt-36'>
         <div className='w-full mx-auto flex items-center justify-center'>
             <img src={omega} className='w-full h-full bg-contain mix-blend-difference mx-auto' ></img>
@@ -79,8 +77,8 @@ const Home = () => {
  <About></About>
    <RuleBook></RuleBook>
    <Sponsor></Sponsor>
-{/*   
-   <StarsCanvas></StarsCanvas> */}
+  
+   <StarsCanvas></StarsCanvas>
    <Contact></Contact>
     <Footer></Footer>
 
