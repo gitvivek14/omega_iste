@@ -20,7 +20,8 @@ const Navbar = () => {
                          transition-all duration-100 scroll-smooth ${current==link.title ? "text-blue-100":"text-white"} 
                          ease-in-out hover:text-lg font-face-gm`} smooth onClick={()=>{
                           setCurrent(link.title)
-                         }}>{link.title}</HashLink>
+                         }}>{link.title}
+                         </HashLink>
                         </li>
                     )
                 })
