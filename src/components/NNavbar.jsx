@@ -30,9 +30,9 @@ const NNavbar = () => {
 
 
     <div className='w-full flex lg:flex-row items-center justify-center h-20 flex-row 
-    text-white fixed max-w-[100%] backdrop-blur-3xl'>
+    text-white fixed max-w-[100%] backdrop-blur-3xl z-10'>
       <div className='w-11/12 items-center justify-between flex sm:justify-between
-       sm:items-center relative backdrop-blur-3xl z-10'>
+       sm:items-center relative'>
           {/* navlinks */}
           <div>
             <img src={omega} width={140} height={140} className='mix-blend-difference'></img>
