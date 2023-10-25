@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+    overflow-x: hidden;
+}
+
 .landing{
     background-image: url('assets/images/bg4.jpg');
     background-repeat: no-repeat;

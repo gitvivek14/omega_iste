@@ -10,6 +10,7 @@ import {Menu} from "lucide-react"
 import Navbar from './Navbar'
 
 
+
 const NNavbar = () => {
     const [Open, setOpen] = useState(false)
     console.log("opemo",Open)
@@ -26,11 +27,9 @@ const NNavbar = () => {
       setOpen(!Open);
     }
   return (
-    
-
-
     <div className='w-full flex lg:flex-row items-center justify-center h-20 flex-row 
-    text-white fixed max-w-[100%] backdrop-blur-3xl z-10'>
+    text-white fixed max-w-[98%] z-10 fill-transparent mx-auto backdrop-blur-[28px] mix-blend-screen
+     overflow-hidden '>
       <div className='w-11/12 items-center justify-between flex sm:justify-between
        sm:items-center relative'>
           {/* navlinks */}
@@ -80,7 +79,7 @@ const NNavbar = () => {
 
           </div> */}
 
-          <div className='md:flex items-center justify-center gap-2 sm:hidden'>
+          <div className='md:flex items-center justify-center gap-2 hidden'>
               {/* Button */}
             <button className="border-2 border-yellow-600 rounded-lg px-3 py-2 text-yellow-400 
             cursor-pointer hover:bg-yellow-600 hover:text-yellow-200" onClick={()=>{
@@ -102,6 +101,8 @@ const NNavbar = () => {
       </div>
     }
   </div>
+   
+
   )
 }
 export default NNavbar

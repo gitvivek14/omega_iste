@@ -19,6 +19,7 @@ import About from '../components/About'
 import RuleBook from '../components/RuleBook'
 import Sponsor from '../components/Sponsor'
 import StarsCanvas from '../components/canvas/Stars'
+import { HashLink } from 'react-router-hash-link'
 const Home = () => {
     const navigate = useNavigate();
    
@@ -57,14 +58,14 @@ const Home = () => {
         </div>
         {/* ball moving downwards */}
     <div className='absolute xs:bottam-32 -bottom-32 w-full flex justify-center items-center'>
-      <a href="#about"><div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2 '>
+      <HashLink to="#about" smooth><div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2 '>
         <motion.dev animate={{y:[0,24,0]}} 
         transition={{duration:1.5,
         repeat:Infinity,
         repeatType:'loop' }}
         className="w-3 h-3 rounded-full bg-secondary mb-1 transition-all duration-200 ease-linear"
         ></motion.dev>
-        </div></a>
+        </div></HashLink>
     </div>
     </div>
   
