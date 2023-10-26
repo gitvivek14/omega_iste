@@ -10,7 +10,7 @@ const Navbar = () => {
       {/* 'flex lg:flex-row gap-x-6 items-center 
         justify-center mx-auto  */}
         <ul className="flex md:flex-row md:gap-x-6 items-center 
-        md:justify-center mx-auto sm:flex-col
+        md:justify-center mx-auto flex-col
           z-20"
         >
             {
