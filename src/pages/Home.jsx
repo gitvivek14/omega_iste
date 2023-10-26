@@ -18,6 +18,7 @@ import RuleBook from '../components/RuleBook'
 import Sponsor from '../components/Sponsor'
 import StarsCanvas from '../components/canvas/Stars'
 import { HashLink } from 'react-router-hash-link'
+import Team from '../components/Team'
 const Home = () => {
     const navigate = useNavigate();
    
@@ -77,8 +78,9 @@ const Home = () => {
  <About></About>
    <RuleBook></RuleBook>
    <Sponsor></Sponsor>
+   <Team></Team>
   
-   <StarsCanvas></StarsCanvas>
+   {/* <StarsCanvas></StarsCanvas> */}
    <Contact></Contact>
     <Footer></Footer>
 

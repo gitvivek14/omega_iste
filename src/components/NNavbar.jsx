@@ -29,7 +29,7 @@ const NNavbar = () => {
   return (
     <div className='w-full flex lg:flex-row items-center justify-center h-20 flex-row 
     text-white fixed max-w-[98%] z-10 fill-transparent mx-auto backdrop-blur-[28px] mix-blend-screen
-     overflow-hidden '>
+      '>
       <div className='w-11/12 items-center justify-between flex sm:justify-between
        sm:items-center relative'>
           {/* navlinks */}
@@ -96,7 +96,7 @@ const NNavbar = () => {
         isOpen && <RegistrationModal isOpen={isOpen} onClose={onClose} overlay={overlay}></RegistrationModal>
     }
     {
-      Open && <div className='absolute md:hidden top-7 z-50'>
+      Open && <div className='absolute md:hidden top-8 z-50'>
         <Navbar></Navbar>
       </div>
     }
