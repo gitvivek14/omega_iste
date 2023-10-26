@@ -78,7 +78,7 @@ const Home = () => {
  <About></About>
    <RuleBook></RuleBook>
    <Sponsor></Sponsor>
-   <Team></Team>
+   {/* <Team></Team> */}
   
    {/* <StarsCanvas></StarsCanvas> */}
    <Contact></Contact>
