@@ -11,11 +11,14 @@ import rootReducer from "../src/reducer/index"
 import { Provider } from "react-redux";
 import {Toaster} from "react-hot-toast"
 import { BrowserRouter } from "react-router-dom";
+import { inject } from "@vercel/analytics/*";
+inject();
 const store = configureStore({
     reducer:rootReducer
 })
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render( 
+    
     <Provider store = {store}>
         <BrowserRouter>
         <Theme>
