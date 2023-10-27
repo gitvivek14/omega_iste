@@ -16,6 +16,7 @@ import geetansh from '../assets/oc/Geetansh.jpg'
 import vanshika from '../assets/oc/Vanshika.jpeg'
 import samridhi from '../assets/oc/Samridhi.jpg'
 import shreyansh from '../assets/oc/Shreyansh.jpg'
+import kriti from '../assets/oc/Kriti.png'
 import akshara from '../assets/oc/Akshara.jpeg'
 import manya from '../assets/oc/Manya.jpg'
 import dhruv from '../assets/oc/Dhruv.jpeg'
@@ -25,194 +26,148 @@ const Team = () => {
   return (
     <div>
     <section className="py-6 dark:text-gray-100">
-	<div className="container p-4 mx-auto space-y-16 sm:p-10">
-		<div className="space-y-4">
-        <h1 className="text-4xl font-bold leadi text-center sm:text-5xl">Our team</h1>
+	<div className="container flex flex-col items-center justify-center p-4 mx-auto space-y-8 sm:p-10">
+		<h1 className="text-4xl font-bold leadi text-center sm:text-5xl">Our team</h1>
+		{/* OEC */}
+		
+			<div className="flex flex-row flex-wrap-reverse justify-center">
+				<div className="flex flex-col justify-center m-8 text-center">
+					<img alt="Sarthak" className="self-center flex-shrink-0 w-72 h-72 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src={sarthak} />
+					<p className="text-xl font-semibold leadi">Sarthak Srivastava</p>
+					<p className="dark:text-gray-400">OEC</p>
+				</div>
+				<div className="flex flex-col justify-center m-8 text-center">
+					<img alt="Abhinav" className="self-center flex-shrink-0 w-72 h-72 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src={abhinav} />
+					<p className="text-xl font-semibold leadi">Abhinav Jain</p>
+					<p className="dark:text-gray-400">OEC</p>
+				</div>
+			</div>	
+		{/* EM */}	
+		<div className="flex flex-row flex-wrap-reverse justify-center">
+				<div className="flex flex-col justify-center m-16 text-center">
+					<img alt="Jahanvi" className="self-center flex-shrink-0 w-72 h-72 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src={jahanvi} />
+					<p className="text-xl font-semibold leadi">Jahnvi Ranjan</p>
+					<p className="dark:text-gray-400">EM</p>
+				</div>
+				<div className="flex flex-col justify-center m-16 text-center">
+					<img alt="Sra" className="self-center flex-shrink-0 w-72 h-72 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src={sra} />
+					<p className="text-xl font-semibold leadi">Sra Bhatia</p>
+					<p className="dark:text-gray-400">EM</p>
+				</div>
+				<div className="flex flex-col justify-center m-16 text-center">
+					<img alt="Chaitanya" className="self-center flex-shrink-0 w-72 h-72 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src={chaitanya} />
+					<p className="text-xl font-semibold leadi">Chaitanya Jayant</p>
+					<p className="dark:text-gray-400">EM</p>
+				</div>
 		</div>
-         {/* OEC */}
-            <div className="grid w-full grid-cols-1 gap-x-1 gap-y-6 sm:grid-cols-2 lg:grid-cols-2">
-                <div className="space-y-4">
-                    <img alt="Abhinav" className="object-cover h-56 mx-auto mb-4 bg-center rounded-sm dark:bg-gray-500" src={sarthak} />
-                    <div className="flex flex-col items-center">
-                        <h4 className="text-xl font-semibold">Sarthak Srivastava</h4>
-                        <p className="text-sm dark:text-gray-400">OEC</p>
-                    </div>
-                </div>
-                <div className="space-y-4">
-                    <img alt="Abhinav" className="object-cover h-56 mx-auto mb-4 bg-center rounded-sm dark:bg-gray-500" src={abhinav} />
-                    <div className="flex flex-col items-center">
-                        <h4 className="text-xl font-semibold">Abhinav Jain</h4>
-                        <p className="text-sm dark:text-gray-400">OEC</p>
-                    </div>
-                </div>
-            </div>
-        {/* EM */}			
-        <div className="grid w-full grid-cols-1 gap-x-1 gap-y-6 sm:grid-cols-2 lg:grid-cols-3">
-                <div className="space-y-4">
-                    <img alt="Abhinav" className="object-cover h-56 mx-auto mb-4 bg-center rounded-sm dark:bg-gray-500" src={sra} />
-                    <div className="flex flex-col items-center">
-                        <h4 className="text-xl font-semibold">Sra Bhatia</h4>
-                        <p className="text-sm dark:text-gray-400">EM</p>
-                    </div>
-                </div>
-                <div className="space-y-4">
-                    <img alt="Abhinav" className="object-cover h-56 mx-auto mb-4 bg-center rounded-sm dark:bg-gray-500" src={chaitanya} />
-                    <div className="flex flex-col items-center">
-                        <h4 className="text-xl font-semibold">Chaitanya Jayant</h4>
-                        <p className="text-sm dark:text-gray-400">EM</p>
-                    </div>
-                </div>    
-                <div className="space-y-4">
-                    <img alt="Abhinav" className="object-cover h-56 mx-auto mb-4 bg-center rounded-sm dark:bg-gray-500" src={jahanvi} />
-                    <div className="flex flex-col items-center">
-                        <h4 className="text-xl font-semibold">Jahnvi Ranjan</h4>
-                        <p className="text-sm dark:text-gray-400">EM</p>
-                    </div>
-                </div> 
-            </div>
-        {/* MARKETING HEADS */}
-            <div className="grid w-full grid-cols-1 gap-x-1 gap-y-6 sm:grid-cols-2 lg:grid-cols-3">
-                <div className="space-y-4">
-                    <img alt="Abhinav" className="object-cover h-56 mx-auto mb-4 bg-center rounded-sm dark:bg-gray-500" src={arjun} />
-                    <div className="flex flex-col items-center">
-                        <h4 className="text-xl font-semibold">Arjun Shekhar</h4>
-                        <p className="text-sm dark:text-gray-400">Marketing Head</p>
-                    </div>
-                </div>
-                <div className="space-y-4">
-                    <img alt="Abhinav" className="object-cover h-56 mx-auto mb-4 bg-center rounded-sm dark:bg-gray-500" src={gargi} />
-                    <div className="flex flex-col items-center">
-                        <h4 className="text-xl font-semibold">Gargi Mehta</h4>
-                        <p className="text-sm dark:text-gray-400">Marketing Head</p>
-                    </div>
-                </div>    
-                <div className="space-y-4">
-                    <img alt="Abhinav" className="object-cover h-56 mx-auto mb-4 bg-center rounded-sm dark:bg-gray-500" src={nutan} />
-                    <div className="flex flex-col items-center">
-                        <h4 className="text-xl font-semibold">Nutan</h4>
-                        <p className="text-sm dark:text-gray-400">Marketing Head</p>
-                    </div>
-                </div> 
-            </div>
-            {/* TECH */}
-            <div className="grid w-full grid-cols-1 gap-x-1 gap-y-6 sm:grid-cols-2 lg:grid-cols-3">
-                <div className="space-y-4">
-                    <img alt="Aabharan" className="object-cover h-56 mx-auto mb-4 bg-center rounded-sm dark:bg-gray-500" src={aabharan} />
-                    <div className="flex flex-col items-center">
-                        <h4 className="text-xl font-semibold">Aabharan Gupta</h4>
-                        <p className="text-sm dark:text-gray-400">Technical Head</p>
-                    </div>
-                </div>
-                <div className="space-y-4">
-                    <img alt="Abhinav" className="object-cover h-56 mx-auto mb-4 bg-center rounded-sm dark:bg-gray-500" src={vivek} />
-                    <div className="flex flex-col items-center">
-                        <h4 className="text-xl font-semibold">Vivek Arora</h4>
-                        <p className="text-sm dark:text-gray-400">Technical Head</p>
-                    </div>
-                </div>    
-                <div className="space-y-4">
-                    <img alt="Abhinav" className="object-cover h-56 mx-auto mb-4 bg-center rounded-sm dark:bg-gray-500" src={saanya} />
-                    <div className="flex flex-col items-center">
-                        <h4 className="text-xl font-semibold">Saanya Setia</h4>
-                        <p className="text-sm dark:text-gray-400">Technical Head</p>
-                    </div>
-                </div> 
-            </div>
-            {/* CONTENT HEADS */}
-            <div className="grid w-full grid-cols-1 gap-x-1 gap-y-6 sm:grid-cols-2 lg:grid-cols-4">
-                <div className="space-y-4">
-                    <img alt="Aabharan" className="object-cover h-56 mx-auto mb-4 bg-center rounded-sm dark:bg-gray-500" src={abhyuday} />
-                    <div className="flex flex-col items-center">
-                        <h4 className="text-xl font-semibold">Abhyuday Venkatesh</h4>
-                        <p className="text-sm dark:text-gray-400">Content Head</p>
-                    </div>
-                </div>
-                <div className="space-y-4">
-                    <img alt="Abhinav" className="object-cover h-56 mx-auto mb-4 bg-center rounded-sm dark:bg-gray-500" src={anushka} />
-                    <div className="flex flex-col items-center">
-                        <h4 className="text-xl font-semibold">Anushka Sharma</h4>
-                        <p className="text-sm dark:text-gray-400">Content Head</p>
-                    </div>
-                </div>    
-            {/* CREATIVITY HEADS */}
-                <div className="space-y-4">
-                    <img alt="Aabharan" className="object-cover h-56 mx-auto mb-4 bg-center rounded-sm dark:bg-gray-500" src={geetansh} />
-                    <div className="flex flex-col items-center">
-                        <h4 className="text-xl font-semibold">Geetansh Mohindru</h4>
-                        <p className="text-sm dark:text-gray-400">Creativity Head</p>
-                    </div>
-                </div>
-                <div className="space-y-4">
-                    <img alt="Abhinav" className="object-cover h-56 mx-auto mb-4 bg-center rounded-sm dark:bg-gray-500" src={vanshika} />
-                    <div className="flex flex-col items-center">
-                        <h4 className="text-xl font-semibold">Vanshika Jindal</h4>
-                        <p className="text-sm dark:text-gray-400">Creativity Head</p>
-                    </div>
-                </div>    
-            </div>
-            {/* DESIGN HEADS */}
-            <div className="grid w-full grid-cols-1 gap-x-1 gap-y-6 sm:grid-cols-2 lg:grid-cols-4">
-                <div className="space-y-4">
-                    <img alt="Aabharan" className="object-cover h-56 mx-auto mb-4 bg-center rounded-sm dark:bg-gray-500" src={abhyuday} />
-                    <div className="flex flex-col items-center">
-                        <h4 className="text-xl font-semibold">Yash Bhargava</h4>
-                        <p className="text-sm dark:text-gray-400">Design Head</p>
-                    </div>
-                </div>
-                <div className="space-y-4">
-                    <img alt="Abhinav" className="object-cover h-56 mx-auto mb-4 bg-center rounded-sm dark:bg-gray-500" src={samridhi} />
-                    <div className="flex flex-col items-center">
-                        <h4 className="text-xl font-semibold">Samridhi Bhardwaj</h4>
-                        <p className="text-sm dark:text-gray-400">Design Head</p>
-                    </div>
-                </div>    
-            {/* MEDIA HEADS */}
-                <div className="space-y-4">
-                    <img alt="Aabharan" className="object-cover h-56 mx-auto mb-4 bg-center rounded-sm dark:bg-gray-500" src={shreyansh} />
-                    <div className="flex flex-col items-center">
-                        <h4 className="text-xl font-semibold">Shreyansh Sristava</h4>
-                        <p className="text-sm dark:text-gray-400">Media Head</p>
-                    </div>
-                </div>
-                <div className="space-y-4">
-                    <img alt="Abhinav" className="object-cover h-56 mx-auto mb-4 bg-center rounded-sm dark:bg-gray-500" src={vanshika} />
-                    <div className="flex flex-col items-center">
-                        <h4 className="text-xl font-semibold">Kriti Goyal</h4>
-                        <p className="text-sm dark:text-gray-400">Media Head</p>
-                    </div>
-                </div>    
-            </div>
-            {/* PUBLICITY HEADS */}
-            <div className="grid w-full grid-cols-1 gap-x-1 gap-y-6 sm:grid-cols-2 lg:grid-cols-4">
-                <div className="space-y-4">
-                    <img alt="Aabharan" className="object-cover h-56 mx-auto mb-4 bg-center rounded-sm dark:bg-gray-500" src={dhruv} />
-                    <div className="flex flex-col items-center">
-                        <h4 className="text-xl font-semibold">Dhruv Sanmotra</h4>
-                        <p className="text-sm dark:text-gray-400">Publicity Head</p>
-                    </div>
-                </div>
-                <div className="space-y-4">
-                    <img alt="Abhinav" className="object-cover h-56 mx-auto mb-4 bg-center rounded-sm dark:bg-gray-500" src={jini} />
-                    <div className="flex flex-col items-center">
-                        <h4 className="text-xl font-semibold">JIni Manchanda</h4>
-                        <p className="text-sm dark:text-gray-400">Publicity Head</p>
-                    </div>
-                </div>    
-                <div className="space-y-4">
-                    <img alt="Aabharan" className="object-cover h-56 mx-auto mb-4 bg-center rounded-sm dark:bg-gray-500" src={manya} />
-                    <div className="flex flex-col items-center">
-                        <h4 className="text-xl font-semibold">Manya Bansal</h4>
-                        <p className="text-sm dark:text-gray-400">Publicity Head</p>
-                    </div>
-                </div>
-                <div className="space-y-4">
-                    <img alt="Abhinav" className="object-cover h-56 mx-auto mb-4 bg-center rounded-sm dark:bg-gray-500" src={akshara} />
-                    <div className="flex flex-col items-center">
-                        <h4 className="text-xl font-semibold">Akshara Manocha</h4>
-                        <p className="text-sm dark:text-gray-400">Publicity Head</p>
-                    </div>
-                </div>    
-            </div>
+		{/* MARKETING HEADS */}
+		<div className="flex flex-row flex-wrap-reverse justify-center">
+				<div className="flex flex-col justify-center m-16 text-center">
+					<img alt="Arjun" className="self-center flex-shrink-0 w-72 h-72 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src={arjun} />
+					<p className="text-xl font-semibold leadi">Arjun Shekhar</p>
+					<p className="dark:text-gray-400">Marketing Head</p>
+				</div>
+				<div className="flex flex-col justify-center m-16 text-center">
+					<img alt="Gargi" className="self-center flex-shrink-0 w-72 h-72 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src={gargi} />
+					<p className="text-xl font-semibold leadi">Gargi Mehta</p>
+					<p className="dark:text-gray-400">Marketing Head</p>
+				</div>
+				<div className="flex flex-col justify-center m-16 text-center">
+					<img alt="Nutan" className="self-center flex-shrink-0 w-72 h-72 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src={nutan} />
+					<p className="text-xl font-semibold leadi">Nutan</p>
+					<p className="dark:text-gray-400">Marketing Head</p>
+				</div>
+		</div>
+		{/* TECH HEADS */}
+		<div className="flex flex-row flex-wrap-reverse justify-center">
+				<div className="flex flex-col justify-center m-16 text-center">
+					<img alt="Aabharan" className="self-center flex-shrink-0 w-72 h-72 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src={aabharan} />
+					<p className="text-xl font-semibold leadi">Aabharan Gupta</p>
+					<p className="dark:text-gray-400">Technical Head</p>
+				</div>
+				<div className="flex flex-col justify-center m-16 text-center">
+					<img alt="Vivek" className="self-center flex-shrink-0 w-72 h-72 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src={vivek} />
+					<p className="text-xl font-semibold leadi">Vivek Arora</p>
+					<p className="dark:text-gray-400">Technical Head</p>
+				</div>
+				<div className="flex flex-col justify-center m-16 text-center">
+					<img alt="Saanya" className="self-center flex-shrink-0 w-72 h-72 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src={saanya} />
+					<p className="text-xl font-semibold leadi">Saanya Setia</p>
+					<p className="dark:text-gray-400">Technical Head</p>
+				</div>
+		</div>
+		<div className="flex flex-row flex-wrap-reverse justify-center">
+		{/* CONTENT HEADS */}
+				<div className="flex flex-col justify-center m-8 text-center">
+					<img alt="Anushka" className="self-center flex-shrink-0 w-72 h-72 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src={anushka} />
+					<p className="text-xl font-semibold leadi">Anushka Sharma</p>
+					<p className="dark:text-gray-400">Content Head</p>
+				</div>
+				<div className="flex flex-col justify-center m-8 text-center">
+					<img alt="Abhyuday" className="self-center flex-shrink-0 w-72 h-72 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src={abhyuday} />
+					<p className="text-xl font-semibold leadi">Abhyuday Venkatesh</p>
+					<p className="dark:text-gray-400">Content Head</p>
+				</div>
+		{/* CREATIVITY HEADS */}		
+				<div className="flex flex-col justify-center m-8 text-center">
+					<img alt="Geetansh" className="self-center flex-shrink-0 w-72 h-72 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src={geetansh} />
+					<p className="text-xl font-semibold leadi">Geetansh Mohindru</p>
+					<p className="dark:text-gray-400">Creativity Head</p>
+				</div>
+				<div className="flex flex-col justify-center m-8 text-center">
+					<img alt="Vanshika" className="self-center flex-shrink-0 w-72 h-72 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src={vanshika} />
+					<p className="text-xl font-semibold leadi">Vanshika Jindal</p>
+					<p className="dark:text-gray-400">Creativity Head</p>
+				</div>
+		</div>
+		<div className="flex flex-row flex-wrap-reverse justify-center">
+		{/* DESIGN HEADS */}
+				<div className="flex flex-col justify-center m-8 text-center">
+					<img alt="Yash" className="self-center flex-shrink-0 w-72 h-72 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src={anushka} />
+					<p className="text-xl font-semibold leadi">Yash Bhargava</p>
+					<p className="dark:text-gray-400">Design Head</p>
+				</div>
+				<div className="flex flex-col justify-center m-8 text-center">
+					<img alt="Samridhi" className="self-center flex-shrink-0 w-72 h-72 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src={samridhi} />
+					<p className="text-xl font-semibold leadi"></p>
+					<p className="dark:text-gray-400">Design Head</p>
+				</div>
+		{/* MEDIA HEADS */}		
+				<div className="flex flex-col justify-center m-8 text-center">
+					<img alt="Shreyansh" className="self-center flex-shrink-0 w-72 h-72 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src={shreyansh} />
+					<p className="text-xl font-semibold leadi">Shreyansh Srivastava</p>
+					<p className="dark:text-gray-400">Media Head</p>
+				</div>
+				<div className="flex flex-col justify-center m-8 text-center">
+					<img alt="Kriti" className="self-center flex-shrink-0 w-72 h-72 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src={kriti} />
+					<p className="text-xl font-semibold leadi">Kriti Goyal</p>
+					<p className="dark:text-gray-400">Media Head</p>
+				</div>
+		</div>	
+		{/* PUBLICITY HEADS */}
+			<div className="flex flex-row flex-wrap-reverse justify-center">
+				<div className="flex flex-col justify-center m-8 text-center">
+					<img alt="Jini" className="self-center flex-shrink-0 w-72 h-72 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src={jini} />
+					<p className="text-xl font-semibold leadi">Jini Manchanda</p>
+					<p className="dark:text-gray-400">Publicity Head</p>
+				</div>
+				<div className="flex flex-col justify-center m-8 text-center">
+					<img alt="Akshara" className="self-center flex-shrink-0 w-72 h-72 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src={akshara} />
+					<p className="text-xl font-semibold leadi">Akshara Manocha</p>
+					<p className="dark:text-gray-400">Publicity Head</p>
+				</div>	
+				<div className="flex flex-col justify-center m-8 text-center">
+					<img alt="Dhruv" className="self-center flex-shrink-0 w-72 h-72 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src={dhruv} />
+					<p className="text-xl font-semibold leadi">Dhruv Sanmotra</p>
+					<p className="dark:text-gray-400">Publicity Head</p>
+				</div>
+				<div className="flex flex-col justify-center m-8 text-center">
+					<img alt="Manya" className="self-center flex-shrink-0 w-72 h-72 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src={manya} />
+					<p className="text-xl font-semibold leadi">Manya Bansal</p>
+					<p className="dark:text-gray-400">Publicity Head</p>
+				</div>
+		</div>	
+		
 	</div>
 </section>
     </div>
