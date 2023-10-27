@@ -17,13 +17,13 @@ const About = () => {
           text-blue-100 font-face-gm'>About the Event</p>
     </div> */}
 
-    <div className='text-white p-6 text-[20px] font-face-mm flex flex-wrap leading-normal'>
+    <div className='text-white p-6 text-[20px] font-face-gm flex flex-wrap leading-normal'>
     OMEGA, by the Indian Society for Technical Education (ISTE), is a 
     high-stakes coding competition showcasing top technical talent. 
     It consists of a challenging online Preliminary Round with three programming questions. 
     The top performers advance to a four-hour, in-person showdown featuring one-on-one coding 
     challenges.
-    The fastest and most accurate participants progress, culminating in two winners
+    The fastest and most accurate participants progress, culminating in two winners.
     </div>
 </div>
 </div>

@@ -33,15 +33,16 @@ const Home = () => {
   
   return (
     
-    <div className='w-full h-full -z-10'>
+    <div className='w-full h-full'>
     <div className='flex flex-col items-center justify-center w-full mx-auto relative mt-36'>
         <div className='w-full mx-auto flex items-center justify-center'>
-            <img src={omega} className='w-full h-full bg-contain mix-blend-difference mx-auto' ></img>
+            <img src={omega} className='w-full h-full bg-contain mix-blend-difference mx-auto sticky' ></img>
         </div>
 
         <div className='flex justify-center items-center absolute z-10 -bottom-11 mx-auto'>
-            <button className='text-center text-[13px] px-6 py-3 
-            rounded-md font-bold
+            <button className='text-center
+             text-xl px-6 py-3 
+            rounded-md font-semibold transition-all duration-200 ease-in hover:scale-125 cursor-pointer 
              bg-yellow-400 text-black' 
              onClick={()=>{
                 setOverlay(<OverlayOne/>)
@@ -49,7 +50,7 @@ const Home = () => {
              }}
              >
                 <div className='flex items-center justify-center gap-1'>
-                    <MdOutlinePeopleOutline className='text-lg'></MdOutlinePeopleOutline>
+                    <MdOutlinePeopleOutline className='text-xl'></MdOutlinePeopleOutline>
                     <p> Register</p>
                 </div>
                

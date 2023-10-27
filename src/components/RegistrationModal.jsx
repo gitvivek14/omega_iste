@@ -29,7 +29,7 @@ const RegistrationModal = ({isOpen,onClose,overlay}) => {
   return (
     <>
         <ChakraProvider>
-        <Modal isCentered={true} isOpen={isOpen} motionPreset='slideInRight' colorScheme='facebook'
+        <Modal isCentered={true} isOpen={isOpen} motionPreset='slideInRight' variant={Modal}
         onClose={onClose} size={'lg'} className='w-[50%] flex items-center justify-center bg-black'>
         {overlay}
         <ModalContent>

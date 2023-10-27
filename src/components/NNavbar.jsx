@@ -96,7 +96,7 @@ const NNavbar = () => {
         isOpen && <RegistrationModal isOpen={isOpen} onClose={onClose} overlay={overlay}></RegistrationModal>
     }
     {
-      Open && <div className='absolute md:hidden top-8 z-50'>
+      Open && <div className='absolute md:hidden top-8 z-50 bg-transparent backdrop-blur-2xl'>
         <Navbar></Navbar>
       </div>
     }

@@ -5,7 +5,7 @@ const Navbar = () => {
 
   const [current, setCurrent] = useState('Home')
   return (
-    <div className='z-40 flex visible'>
+    <div className='z-40 flex visible bg-transparent backdrop-blur-xl'>
     <nav>
       {/* 'flex lg:flex-row gap-x-6 items-center 
         justify-center mx-auto  */}
