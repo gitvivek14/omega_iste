@@ -1,14 +1,10 @@
 import "./App.css";
-import Footer from "./components/Footer";
 import NNavbar from "./components/NNavbar";
-import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import StarsCanvas from "../src/components/canvas/Stars"
 import { useEffect, useState } from "react";
 import PreLoader from "./components/PreLoader";
-import movie from "../src/assets/video/movie.mp4"
-import NNNavbar from "./components/NNNavbar";
-// import bg from './assets/images/bg3.png';
+
 function App() {
   const [loading, setLoading] = useState(true);
 
