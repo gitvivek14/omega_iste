@@ -5,18 +5,18 @@ const Navbar = () => {
 
   const [current, setCurrent] = useState('Home')
   return (
-    <div>
+    <div className='z-40 flex visible'>
     <nav>
       {/* 'flex lg:flex-row gap-x-6 items-center 
         justify-center mx-auto  */}
         <ul className="flex md:flex-row md:gap-x-6 items-center 
-        md:justify-center mx-auto flex-col transition-all duration-150 ease-linear
-         justify-between z-20"
+        md:justify-center mx-auto flex-col
+          z-20"
         >
             {
                 NavBarLinks.map((link,idx)=>{
                     return(
-                        <li key={idx} className='flex flex-col scroll-smooth'>
+                        <li key={idx}>
                          <HashLink to={`${link.path}`} className={`hover:text-blue-100
                          transition-all duration-100  ${current==link.title ? "text-blue-100":"text-white"} 
                          ease-in-out hover:text-lg font-face-gm`} smooth onClick={()=>{
