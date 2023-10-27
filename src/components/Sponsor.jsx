@@ -31,7 +31,7 @@ const Sponsor = () => {
   return (
     <div className='flex items-center justify-center flex-col mt-24'>
     <div>
-    <h1 className="text-[3rem] text-yellow-300 font-bold mx-auto font-face-gm">SPONSORS</h1>
+    <h1 className="text-[3rem] text-green-500 font-bold mx-auto font-face-gm">SPONSORS</h1>
     </div>
 
 <div className='flex flex-row items-center flex-wrap justify-center gap-10 w-10/12 max-w-full mt-10 '>
