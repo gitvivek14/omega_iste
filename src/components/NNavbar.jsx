@@ -34,7 +34,7 @@ const NNavbar = () => {
        sm:items-center relative'>
           {/* navlinks */}
           <div>
-            <img src={omega} width={140} height={140} className='mix-blend-difference'></img>
+            <img src={logo} width={140} height={140} className='mix-blend-difference'></img>
           </div>
           <div className='hidden md:flex relative'>
           <Navbar></Navbar>
