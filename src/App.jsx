@@ -12,7 +12,7 @@ function App() {
     const load = ()=>{
       setTimeout(()=>{
         setLoading(false);
-      },2000);
+      },1000);
     }
   
   load();
