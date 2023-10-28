@@ -41,7 +41,7 @@ const Home = () => {
             <img src={omega} className='w-full h-full bg-contain mix-blend-difference mx-auto sticky' ></img>
         </div>
 
-        <div className='flex justify-center items-center absolute z-10 -bottom-11 mx-auto'>
+        <div className='flex justify-center items-center absolute z-10 -bottom-20 mx-auto'>
             <button className='text-center
              text-xl px-6 py-3 
             rounded-md font-semibold transition-all duration-200 ease-in hover:scale-125 cursor-pointer 
@@ -57,6 +57,20 @@ const Home = () => {
                 </div>
                
             </button>
+        </div>
+
+        <div className='w-full flex flex-col items-center justify-evenly mx-auto text-white'>
+          <div>
+           <p className='text-center font-semibold text-3xl'>Date : 4 November</p>
+          </div>
+          <div>
+            <p className='text-center font-semibold text-2xl'>Time : 5:30 PM</p>
+          </div>
+          <div>
+            <p className='text-center font-semibold text-xl'>
+            Venue  : LP-109
+            </p>
+          </div>
         </div>
         {/* ball moving downwards */}
     {/* <div className='absolute xs:bottam-32 -bottom-32 w-full flex justify-center items-center'>
