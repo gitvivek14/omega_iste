@@ -19,6 +19,8 @@ import Sponsor from '../components/Sponsor'
 import StarsCanvas from '../components/canvas/Stars'
 import { HashLink } from 'react-router-hash-link'
 import Team from '../components/Team'
+import NewFooter from '../components/NewFooter'
+import Countdown from "../components/Countdown"
 const Home = () => {
     const navigate = useNavigate();
    
@@ -76,13 +78,15 @@ const Home = () => {
 
 
  <div className='relative z-0'>
+  <Countdown></Countdown>
  <About></About>
    <RuleBook></RuleBook>
    <Sponsor></Sponsor>
     <Team></Team>
    {/* <StarsCanvas></StarsCanvas> */}
    <Contact></Contact>
-    <Footer></Footer>
+   <NewFooter></NewFooter>
+  
 
  </div>
    
