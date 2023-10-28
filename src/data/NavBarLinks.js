@@ -6,11 +6,12 @@ export const NavBarLinks = [{
     {
         title:'Our Team',
         path:"/team"
-    },{
-        title:'Events',
-        path:"/"
-        
     },
+    // {
+    //     title:'Events',
+    //     path:"/"
+        
+    // },
     {
         title:'About',
         path:"#about"
@@ -19,6 +20,9 @@ export const NavBarLinks = [{
     {
         title:'Sponsors',
         path:"/"
-        
+    },
+    {
+        title:'Contact',
+        path:"/"
     }
 ]

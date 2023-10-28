@@ -4,6 +4,8 @@ import StarsCanvas from './canvas/Stars'
 const Footer = () => {
   return (
     <div className='w-11/12 flex flex-col mx-auto p-4 text-white'>
+
+        
         <div className='flex flex-row items-center justify-evenly w-full'>
             <div className='flex flex-col items-start w-[40%] justify-start'>
                 <h2 className='font-bold text-lg'>Omega</h2>
