@@ -21,13 +21,14 @@ import akshara from '../assets/oc/Akshara.jpeg'
 import manya from '../assets/oc/Manya.jpg'
 import dhruv from '../assets/oc/Dhruv.jpeg'
 import jini from '../assets/oc/Jini.jpeg'
+import yash from '../assets/oc/yash.jpg'
 
 const Team = () => {
   return (
     <div>
-    <section className="py-6 dark:text-gray-100">
-	<div className="container flex flex-col items-center justify-center p-4 mx-auto space-y-8 sm:p-10" id='team'>
-		<h1 className="text-sky-300  font-bold leadi text-center sm:text-5xl" >OUR TEAM</h1>
+    <section className="py-6 dark:text-gray-100 w-full">
+	<div className="container flex flex-col items-center justify-center p-4 mx-auto space-y-8" id='team'>
+		<h1 className="text-sky-300  font-bold leadi text-center sm:text-8xl" >OUR TEAM</h1>
 		{/* OEC */}
 		
 			<div className="flex flex-row flex-wrap-reverse justify-center">
@@ -43,18 +44,18 @@ const Team = () => {
 				</div>
 			</div>	
 		{/* EM */}	
-		<div className="flex flex-row flex-wrap-reverse justify-center">
-				<div className="flex flex-col justify-center m-16 text-center">
+		<div className="flex flex-row flex-wrap justify-center">
+				<div className="flex flex-col justify-center m-8 text-center">
 					<img alt="Jahanvi" className="self-center flex-shrink-0 w-72 h-72 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src={jahanvi} />
 					<p className="text-xl font-semibold leadi text-white">Jahnvi Ranjan</p>
 					<p className="dark:text-white text-white">EM Head</p>
 				</div>
-				<div className="flex flex-col justify-center m-16 text-center">
+				<div className="flex flex-col justify-center m-8 text-center">
 					<img alt="Sra" className="self-center flex-shrink-0 w-72 h-72 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src={sra} />
 					<p className="text-xl font-semibold leadi text-white">Sra Bhatia</p>
 					<p className="dark:text-white text-white">EM Head</p>
 				</div>
-				<div className="flex flex-col justify-center m-16 text-center">
+				<div className="flex flex-col justify-center m-8 text-center">
 					<img alt="Chaitanya" className="self-center flex-shrink-0 w-72 h-72 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src={chaitanya} />
 					<p className="text-xl font-semibold leadi text-white">Chaitanya Jayant</p>
 					<p className="dark:text-white text-white">EM Head</p>
@@ -62,35 +63,35 @@ const Team = () => {
 		</div>
 		{/* MARKETING HEADS */}
 		<div className="flex flex-row flex-wrap-reverse justify-center w-full">
-				<div className="flex flex-col justify-center m-16 text-center">
+				<div className="flex flex-col justify-center m-8 text-center">
 					<img alt="Arjun" className="self-center flex-shrink-0 w-72 h-72 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src={arjun} />
 					<p className="text-xl font-semibold leadi text-white">Arjun Shekhar</p>
 					<p className="dark:text-white text-white">Marketing Head</p>
 				</div>
-				<div className="flex flex-col justify-center m-16 text-center">
+				<div className="flex flex-col justify-center m-8 text-center">
 					<img alt="Gargi" className="self-center flex-shrink-0 w-72 h-72 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src={gargi} />
 					<p className="text-xl font-semibold leadi text-white">Gargi Mehta</p>
 					<p className="dark:text-white text-white">Marketing Head</p>
 				</div>
-				<div className="flex flex-col justify-center m-16 text-center">
+				<div className="flex flex-col justify-center m-8 text-center">
 					<img alt="Nutan" className="self-center flex-shrink-0 w-72 h-72 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src={nutan} />
 					<p className="text-xl font-semibold leadi text-white">Nutan</p>
 					<p className="dark:text-white text-white">Marketing Head</p>
 				</div>
 		</div>
 		{/* TECH HEADS */}
-		<div className="flex flex-row flex-wrap-reverse justify-center w-full">
-				<div className="flex flex-col justify-center m-16 text-center">
+		<div className="flex flex-row flex-wrap-reverse justify-center max-w-full">
+				<div className="flex flex-col justify-center m-8 text-center w-full">
 					<img alt="Aabharan" className="self-center flex-shrink-0 w-72 h-72 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src={aabharan} />
 					<p className="text-xl font-semibold leadi text-white">Aabharan Gupta</p>
 					<p className="dark:text-white text-white">Technical Head</p>
 				</div>
-				<div className="flex flex-col justify-center m-16 text-center">
+				<div className="flex flex-col justify-center m-8 text-center">
 					<img alt="Vivek" className="self-center flex-shrink-0 w-72 h-72 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src={vivek} />
 					<p className="text-xl font-semibold leadi text-white">Vivek Arora</p>
 					<p className="dark:text-white text-white">Technical Head</p>
 				</div>
-				<div className="flex flex-col justify-center m-16 text-center">
+				<div className="flex flex-col flex-wrap justify-center m-8 text-center">
 					<img alt="Saanya" className="self-center flex-shrink-0 w-72 h-72 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src={saanya} />
 					<p className="text-xl font-semibold leadi text-white">Saanya Setia</p>
 					<p className="dark:text-white text-white">Technical Head</p>
@@ -123,7 +124,7 @@ const Team = () => {
 		<div className="flex flex-row flex-wrap-reverse justify-center">
 		{/* DESIGN HEADS */}
 				<div className="flex flex-col justify-center m-8 text-center">
-					<img alt="Yash" className="self-center flex-shrink-0 w-72 h-72 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src={anushka} />
+					<img alt="Yash" className="self-center flex-shrink-0 w-72 h-72 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src={yash} />
 					<p className="text-xl font-semibold leadi text-white">Yash Bhargava</p>
 					<p className="dark:text-white text-white">Design Head</p>
 				</div>

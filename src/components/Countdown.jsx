@@ -38,7 +38,7 @@ const Countdown = () => {
 							<div className='value'>
 								<span>{value}</span>
 							</div>
-							<span className='label text-white'> {label} </span>
+							<span className='label md:scale-150'> {label} </span>
 						</div>
 					);
 				})}
