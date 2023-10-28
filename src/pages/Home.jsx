@@ -35,7 +35,7 @@ const Home = () => {
   
   return (
     
-    <div className='w-full h-full'>
+    <div className='w-full h-full' id='home'>
     <div className='flex flex-col items-center justify-center w-full mx-auto relative mt-36'>
         <div className='w-full mx-auto flex items-center justify-center'>
             <img src={omega} className='w-full h-full bg-contain mix-blend-difference mx-auto sticky' ></img>

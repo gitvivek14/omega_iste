@@ -29,7 +29,7 @@ const Sponsor = () => {
         },
     ]
   return (
-    <div className='flex items-center justify-center flex-col mt-24'>
+    <div className='flex items-center justify-center flex-col mt-24' id='sponsors'>
     <div>
     <h1 className="text-[3rem] text-sky-300 font-bold mx-auto font-face-gm">SPONSORS</h1>
     </div>

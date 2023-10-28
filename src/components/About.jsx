@@ -2,8 +2,9 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div className='w-11/12 flex flex-col mx-auto items-start justify-start mt-[5rem]'id='about'>
-    <div className=' flex w-full items-center justify-center mt-10'>
+    <div className='w-11/12 flex flex-col mx-auto items-start justify-center mt-[5rem]'>
+      <div></div>
+    <div className=' flex w-full items-center justify-center mt-10' id='about'>
         <h1 className='text-sky-300 font-face-gm font-bold text-[3rem] space-x-2 mx-auto text-center'>ABOUT THE EVENT</h1>
     </div>
     {/* //bg-[#1c1334b3] */}

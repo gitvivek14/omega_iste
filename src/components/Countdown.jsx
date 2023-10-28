@@ -26,7 +26,7 @@ const Countdown = () => {
 	}, []);
 
 	return (
-		<div className="flex w-full items-center justify-center mx-auto mt-44">
+		<div className="flex md:w-full w-4/12 items-center justify-center mx-auto mt-44">
 			<div className='countdown'>
 			{/* <h2>Countdown</h2> */}
 			<div className='content'>

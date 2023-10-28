@@ -1,11 +1,11 @@
 export const NavBarLinks = [{
     
         title:"Home",
-        path:"/"
+        path:"#home"
     },
     {
         title:'Our Team',
-        path:"/team"
+        path:"#team"
     },
     // {
     //     title:'Events',
@@ -19,10 +19,10 @@ export const NavBarLinks = [{
     },
     {
         title:'Sponsors',
-        path:"/"
+        path:"#sponsors"
     },
     {
         title:'Contact',
-        path:"/"
+        path:"#contact"
     }
 ]

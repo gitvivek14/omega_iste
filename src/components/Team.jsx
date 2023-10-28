@@ -26,8 +26,8 @@ const Team = () => {
   return (
     <div>
     <section className="py-6 dark:text-gray-100">
-	<div className="container flex flex-col items-center justify-center p-4 mx-auto space-y-8 sm:p-10">
-		<h1 className="text-sky-300  font-bold leadi text-center sm:text-5xl">OUR TEAM</h1>
+	<div className="container flex flex-col items-center justify-center p-4 mx-auto space-y-8 sm:p-10" id='team'>
+		<h1 className="text-sky-300  font-bold leadi text-center sm:text-5xl" >OUR TEAM</h1>
 		{/* OEC */}
 		
 			<div className="flex flex-row flex-wrap-reverse justify-center">
