@@ -80,7 +80,7 @@ const Team = () => {
 				</div>
 		</div>
 		{/* TECH HEADS */}
-		<div className="flex flex-row flex-wrap-reverse justify-center max-w-full">
+		<div className="flex flex-row flex-wrap-reverse justify-center ">
 				<div className="flex flex-col justify-center m-8 text-center w-full">
 					<img alt="Aabharan" className="self-center flex-shrink-0 w-72 h-72 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src={aabharan} />
 					<p className="text-xl font-semibold leadi text-white">Aabharan Gupta</p>
@@ -91,7 +91,7 @@ const Team = () => {
 					<p className="text-xl font-semibold leadi text-white">Vivek Arora</p>
 					<p className="dark:text-white text-white">Technical Head</p>
 				</div>
-				<div className="flex flex-col flex-wrap justify-center m-8 text-center">
+				<div className="flex flex-col justify-center m-8 text-center">
 					<img alt="Saanya" className="self-center flex-shrink-0 w-72 h-72 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src={saanya} />
 					<p className="text-xl font-semibold leadi text-white">Saanya Setia</p>
 					<p className="dark:text-white text-white">Technical Head</p>
