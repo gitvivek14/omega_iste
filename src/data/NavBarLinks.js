@@ -1,7 +1,7 @@
 export const NavBarLinks = [{
     
         title:"Home",
-        path:"#home"
+        path:"https://omega-iste.vercel.app/#home"
     },
     {
         title:'Our Team',
