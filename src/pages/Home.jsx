@@ -21,6 +21,7 @@ import { HashLink } from 'react-router-hash-link'
 import Team from '../components/Team'
 import NewFooter from '../components/NewFooter'
 import Countdown from "../components/Countdown"
+import { Link } from 'react-router-dom'
 const Home = () => {
     const navigate = useNavigate();
    
@@ -30,47 +31,61 @@ const Home = () => {
         //   backdropFilter='blur(10px) hue-rotate(90deg)'
         />
       )
-    const { isOpen, onOpen, onClose } = useDisclosure()
-    const [overlay, setOverlay] = React.useState(<OverlayOne />)
+    // const { isOpen, onOpen, onClose } = useDisclosure()
+    // const [overlay, setOverlay] = React.useState(<OverlayOne />)
   
   return (
     
     <div className='w-full h-full' id='home'>
     <div className='flex flex-col items-center justify-center w-full mx-auto relative mt-36'>
-        <div className='w-full mx-auto flex items-center justify-center z-40 mix-blend-lighten'>
+      {/* differnce */}
+        <div className='w-full mx-auto flex items-center justify-center z-40 mix-blend-screen'>
             <img src={omega} className='w-full h-full bg-contain mx-auto sticky z-20 ' ></img>
         </div>
 
-        <div className='flex justify-center items-center absolute z-10 -bottom-20 mx-auto'>
-            <button className='text-center
-             text-xl px-6 py-3 
-            rounded-md font-semibold transition-all duration-200 ease-in hover:scale-125 cursor-pointer 
-             bg-yellow-400 text-black' 
-             onClick={()=>{
-                setOverlay(<OverlayOne/>)
-                onOpen();
-             }}
+        <div className='flex justify-center items-center absolute z-10 -bottom-32 mx-auto'>
+          <Link to="/register">
+          <button className=' shadow-lg
+             p-6 md:w-full
+            rounded-md  transition-all duration-200 
+            ease-in hover:shadow-[#49c2c9] cursor-pointer 
+             bg-[#49c2c9] text-black md:scale-150 flex items-center justify-center font-face-sm relative '
              >
-                <div className='flex items-center justify-center gap-1'>
-                    <MdOutlinePeopleOutline className='text-xl'></MdOutlinePeopleOutline>
-                    <p> Register</p>
-                </div>
+                  {/* <div>
+                  <MdOutlinePeopleOutline className='text-4xl font-face-sm'></MdOutlinePeopleOutline>
+                  </div> */}
+                  <div className='mx-auto'>
+                  <span style={{fontSize:"40px", lineHeight:"0px"}}>
+                 Register
+                 </span>
+
+                  </div>
+                 
+                  
+
+                  
+                   
+                   
+                
                
             </button>
+
+          </Link>
+          
         </div>
 
         <div className='w-full flex flex-col items-center justify-evenly mx-auto text-white'>
           <div>
-           <p className='text-center font-semibold text-3xl'>Date : 4 November</p>
+           <p className='text-center font-semibold  text-3xl md:text-6xl font-face-sm'>04-11-23</p>
           </div>
-          <div>
+          {/* <div>
             <p className='text-center font-semibold text-2xl'>Time : 5:30 PM</p>
           </div>
           <div>
             <p className='text-center font-semibold text-xl'>
             Venue  : LP-109
             </p>
-          </div>
+          </div> */}
         </div>
         {/* ball moving downwards */}
     {/* <div className='absolute xs:bottam-32 -bottom-32 w-full flex justify-center items-center'>
@@ -110,9 +125,9 @@ const Home = () => {
     
 
 
-    {
+    {/* {
         isOpen && <RegistrationModal isOpen={isOpen} onClose={onClose} overlay={overlay}></RegistrationModal>
-    }
+    } */}
     </div>
 
    

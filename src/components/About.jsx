@@ -18,7 +18,7 @@ const About = () => {
           text-blue-100 font-face-gm'>About the Event</p>
     </div> */}
 
-    <div className='text-white p-6 text-[20px] font-face-gm flex flex-wrap leading-normal backdrop-blur-3xl bg-transparent '>
+    <div className='text-white md:p-6 p-4 text-[20px] font-face-gm flex flex-wrap leading-normal backdrop-blur-3xl bg-transparent '>
     The Indian Society for Technical Education (ISTE) is set to host an exhilarating event named OMEGA, a head-to-head coding competition designed to bring 
     out the best in technical minds. The event is divided into two stages, starting with a Preliminary Round conducted on a designated online platform. Here, participants will be given a challenging set of three Data Structures and Algorithms (DSA) questions, with a strict time limit of 60 minutes to demonstrate their problem-solving prowess. The top  participants showcasing exceptional performance will advance to the main event, ensuring that only the best of the best move forward to the next stage.
 <br></br>

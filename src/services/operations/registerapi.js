@@ -3,7 +3,7 @@ import {apiconnector} from "../apiConnector"
 
 import {setLoading} from "../../slices/userSlice"
 
-export function registeruser(fullname,rollno,email){
+export function registeruser(fullname,rollno,email,phone,cemail){
     return async(dispatch)=>{
         const toastID = toast.loading("Registering...")
         dispatch(setLoading(true))
@@ -11,7 +11,7 @@ export function registeruser(fullname,rollno,email){
             const response = await apiconnector("POST",
             "http://localhost:4000/api/v1/register",
             {
-                fullname,rollno,email
+                fullname,rollno,email,phone,cemail
             }
             )
             console.log("printing status",response.status)
@@ -29,6 +29,7 @@ export function registeruser(fullname,rollno,email){
                 toast.dismiss(toastID)
                 return;
             }
+            toast.dismiss(toastID)
 
             // toast.error("Couldn't Register")
         }

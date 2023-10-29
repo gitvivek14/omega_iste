@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Countdown.css";
 
-const COUNTDOWN_TARGET = new Date("2023-10-31T23:59:59");
+const COUNTDOWN_TARGET = new Date("2023-11-04T23:59:59");
 
 const getTimeLeft = () => {
 	const totalTimeLeft = COUNTDOWN_TARGET - new Date();
@@ -26,7 +26,7 @@ const Countdown = () => {
 	}, []);
 
 	return (
-		<div className="flex md:w-full w-4/12 items-center justify-center mx-auto mt-44">
+		<div className="flex md:w-full w-4/12 items-center justify-center mx-auto mt-64">
 			<div className='countdown'>
 			{/* <h2>Countdown</h2> */}
 			<div className='content'>

@@ -34,7 +34,7 @@ const NNavbar = () => {
        sm:items-center relative'>
           {/* navlinks */}
           <div>
-            <img src={logo} width={140} height={140} className='mix-blend-difference'></img>
+            <img src={logo} width={130} height={130} className='mix-blend-difference'></img>
           </div>
           <div className='hidden md:flex relative'>
           <Navbar></Navbar>
@@ -81,20 +81,21 @@ const NNavbar = () => {
 
           <div className='md:flex items-center justify-center gap-2 hidden'>
               {/* Button */}
-            <button className="border-2 border-yellow-600 rounded-lg px-3 py-2 text-yellow-400 
-            cursor-pointer hover:bg-yellow-600 hover:text-yellow-200" onClick={()=>{
-                onOpen();
-            }}>
+              <Link to="/register">
+              <button className="border-2 border-yellow-600 rounded-lg px-3 py-2 text-yellow-400 
+            cursor-pointer hover:bg-yellow-600 hover:text-yellow-200">
                 <div className='flex items-center justify-center gap-3'>
                     <MdOutlinePeopleOutline></MdOutlinePeopleOutline>
                     <p>Register</p>
                 </div>
             </button>
+              </Link>
+        
           </div>
       </div>
-    {
+    {/* {
         isOpen && <RegistrationModal isOpen={isOpen} onClose={onClose} overlay={overlay}></RegistrationModal>
-    }
+    } */}
     {
       Open && <div className='absolute md:hidden top-8 z-50 bg-transparent backdrop-blur-2xl'>
         <Navbar></Navbar>
