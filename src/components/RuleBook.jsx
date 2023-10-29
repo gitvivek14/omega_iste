@@ -10,7 +10,7 @@ const RuleBook = () => {
         </div>
 
         <div className='w-10/12  flex justify-center items-center mx-auto mt-6 flex-col min-h-min'>
-        <div className='text-white p-7 text-[20px] font-face-gm leading-10'>
+        <div className='text-white p-7 text-[20px] font-face-gm leading-10 backdrop-blur-3xl'>
            1. Participants must log in to the designated platform on the specified date.
            <br></br>
             2. Each participant will have 60 minutes to solve 3 coding questions.

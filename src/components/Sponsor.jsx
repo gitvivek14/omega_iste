@@ -39,7 +39,7 @@ const Sponsor = () => {
 {
         data.map((card,idx)=>{
             return(
-                <div className='w-60 h-50 rounded-lg flex-col p-5 backdrop-blur-sm spo 
+                <div className='w-60 h-50 rounded-lg flex-col p-5 backdrop-blur-2xl spo 
                  hover:scale-125 shadow-lg shadow-purple-400 ease-in duration-200 hover:shadow-orange-400 hover:shadow-md transition-all'>
                     <div className='flex items-center flex-col justify-center gap-4 rounded-xl '>
                         <img src={india} className='w-full h-full'></img>
