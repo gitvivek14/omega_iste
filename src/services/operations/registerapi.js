@@ -9,7 +9,7 @@ export function registeruser(fullname,rollno,email,phone,cemail){
         dispatch(setLoading(true))
         try{
             const response = await apiconnector("POST",
-            "http://localhost:4000/api/v1/register",
+            "https://omega-iste-backend.vercel.app/api/v1/register",
             {
                 fullname,rollno,email,phone,cemail
             }
