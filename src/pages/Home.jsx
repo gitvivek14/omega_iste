@@ -37,8 +37,8 @@ const Home = () => {
     
     <div className='w-full h-full' id='home'>
     <div className='flex flex-col items-center justify-center w-full mx-auto relative mt-36'>
-        <div className='w-full mx-auto flex items-center justify-center'>
-            <img src={omega} className='w-full h-full bg-contain mix-blend-difference mx-auto sticky' ></img>
+        <div className='w-full mx-auto flex items-center justify-center z-40 mix-blend-lighten'>
+            <img src={omega} className='w-full h-full bg-contain mx-auto sticky z-20 ' ></img>
         </div>
 
         <div className='flex justify-center items-center absolute z-10 -bottom-20 mx-auto'>
