@@ -31,7 +31,7 @@ const Team = () => {
 		<h1 className="text-sky-300  font-bold leadi text-center sm:text-[3rem] text-[3rem]" >OUR TEAM</h1>
 		{/* OEC */}
 		
-			<div className="flex flex-row flex-wrap-reverse justify-center">
+			<div className="flex flex-row flex-wrap justify-center">
 				<div className="flex flex-col justify-center m-8 text-center">
 					<img alt="Sarthak" className="self-center flex-shrink-0 w-72 h-72 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src={sarthak} />
 					<p className="text-xl font-semibold leadi text-white">Sarthak Srivastava</p>
