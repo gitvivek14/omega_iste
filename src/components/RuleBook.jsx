@@ -10,11 +10,32 @@ const RuleBook = () => {
         </div>
 
         <div className='w-10/12  flex justify-center items-center mx-auto mt-6 flex-col min-h-min'>
-        <div className='text-white p-7 text-[20px] font-face-gm'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus 
-            aliquid cum voluptas eligendi! Pariatur, deleniti esse est eligendi 
-            sint quas? Reprehenderit, explicabo culpa! Quaerat beatae enim 
-            perspiciatis aperiam aliquid illo.
+        <div className='text-white p-7 text-[20px] font-face-gm leading-10'>
+           1. Participants must log in to the designated platform on the specified date.
+           <br></br>
+            2. Each participant will have 60 minutes to solve 3 coding questions.
+            <br></br>
+            3. The final showdown will feature the top 48 participants based on their performance.
+            <br></br>
+            4. The main event is an in-person, one-on-one competition with no team participation.
+            <br></br>
+            5.  The duration of the entire event is 4 hours.
+            <br></br>
+            6.  There will be one question for all the  participants in each round
+            <br></br> 
+            7.  Each round is set at a 20-minute duration. 
+            <br></br>
+            8.  Fastest problem-solver or participants successfully satisfying the most test cases (in cases where time becomes a factor) will earn the right to progress to the next round.
+            <br></br>
+            9.  The process is repeated until two winners emerge.
+            <br></br>
+            10. Tie breaker will be a rapid-fire round consisting of 5 questions. The quickest and the most accurate participants will advance to the next level.
+            <br></br>
+
+            11. Each candidate must bring their laptops and other necessary technical equipment required for the contest.
+            <br></br>
+
+
         </div>
     </div>
     </div>
