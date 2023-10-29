@@ -1,5 +1,5 @@
 import React from 'react'
-import landingimg from '../assets/images/bg.jpg'
+
 import Navbar from '../components/Navbar'
 import { Code } from '@radix-ui/themes'
 import CTAButton from '../components/CTAButton'

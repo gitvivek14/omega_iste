@@ -17,16 +17,16 @@ const NewFooter = () => {
             </a>
             <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-white">
                 <li>
-                    <a href="#" class="mr-4 hover:underline md:mr-6  text-white">About</a>
+                    <a href="#about" class="mr-4 hover:underline md:mr-6  text-white">About</a>
                 </li>
                 <li>
-                    <a href="#" class="mr-4 hover:underline md:mr-6 text-white">Contact</a>
+                    <a href="#contact" class="mr-4 hover:underline md:mr-6 text-white">Contact</a>
                 </li>
                 <li>
-                    <a href="#" class="mr-4 hover:underline md:mr-6 text-white">Home</a>
+                    <a href="/" class="mr-4 hover:underline md:mr-6 text-white">Home</a>
                 </li>
                 <li>
-                    <a href="#" class="hover:underline text-white">Our Team</a>
+                    <a href="#team" class="hover:underline text-white">Our Team</a>
                 </li>
             </ul>
         </div>
