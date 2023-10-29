@@ -35,7 +35,6 @@ export function registeruser(fullname,rollno,email,phone,cemail){
         }
         dispatch(setLoading(false))
         toast.dismiss(toastID)
-        // navigate("https://omega-iste.vercel.app/");
     }
 
 }
