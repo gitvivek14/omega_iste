@@ -18,13 +18,20 @@ const About = () => {
           text-blue-100 font-face-gm'>About the Event</p>
     </div> */}
 
-    <div className='text-white p-6 text-[20px] font-face-gm flex flex-wrap leading-normal'>
-    OMEGA, by the Indian Society for Technical Education (ISTE), is a 
-    high-stakes coding competition showcasing top technical talent. 
-    It consists of a challenging online Preliminary Round with three programming questions. 
-    The top performers advance to a four-hour, in-person showdown featuring one-on-one coding 
-    challenges.
-    The fastest and most accurate participants progress, culminating in two winners.
+    <div className='text-white p-6 text-[20px] font-face-gm flex flex-wrap leading-normal backdrop-blur-3xl bg-transparent '>
+    The Indian Society for Technical Education (ISTE) is set to host an exhilarating event named OMEGA, a head-to-head coding competition designed to bring 
+    out the best in technical minds. The event is divided into two stages, starting with a Preliminary Round conducted on a designated online platform. Here, participants will be given a challenging set of three Data Structures and Algorithms (DSA) questions, with a strict time limit of 60 minutes to demonstrate their problem-solving prowess. The top  participants showcasing exceptional performance will advance to the main event, ensuring that only the best of the best move forward to the next stage.
+<br></br>
+<br></br>
+The main event of OMEGA promises to be a thrilling 
+in-person showdown, where the shortlisted participants will face off in a 
+series of one-on-one coding challenges. This intense competition spans over a 
+duration of four hours, testing not only technical acumen but also resilience and adaptability under 
+pressure. The rounds will consist of one question for all participants where each round will be of 20 minutes. 
+
+The participants who manage to solve the question first or satisfy maximum test cases 
+(in case the time exceeds) will advance to the next round. This process continues until we are 
+finally left with the top two candidates who emerge as winners.
     </div>
 </div>
 </div>
