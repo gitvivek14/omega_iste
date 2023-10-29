@@ -80,6 +80,7 @@ const Team = () => {
 				</div>
 		</div>
 		{/* TECH HEADS */}
+		
 		<div className="flex flex-row flex-wrap-reverse justify-center ">
 				<div className="flex flex-col justify-center m-8 text-center w-full">
 					<img alt="Aabharan" className="self-center flex-shrink-0 w-72 h-72 mb-4 bg-center bg-cover rounded-full dark:bg-gray-500" src={aabharan} />
