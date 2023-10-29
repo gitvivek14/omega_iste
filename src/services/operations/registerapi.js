@@ -2,8 +2,9 @@ import { toast } from "react-hot-toast";
 import {apiconnector} from "../apiConnector"
 
 import {setLoading} from "../../slices/userSlice"
-
+import { useNavigate } from "react-router";
 export function registeruser(fullname,rollno,email,phone,cemail){
+    const navigate = useNavigate();
     return async(dispatch)=>{
         const toastID = toast.loading("Registering...")
         dispatch(setLoading(true))
@@ -35,6 +36,7 @@ export function registeruser(fullname,rollno,email,phone,cemail){
         }
         dispatch(setLoading(false))
         toast.dismiss(toastID)
+        navigate("https://omega-iste.vercel.app/");
     }
 
 }
