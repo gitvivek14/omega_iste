@@ -8,7 +8,7 @@ const About = () => {
         <h1 className='text-sky-300 font-face-gm font-bold text-[3rem] space-x-2 mx-auto text-center'>ABOUT THE EVENT</h1>
     </div>
     {/* //bg-[#1c1334b3] */}
-<div className='w-10/12  bg-transparent 
+    <div className='w-10/12  bg-transparent 
  max-h-max flex justify-start items-center mx-auto mt-6 flex-col landing1'>
     {/* that blue ball */}
     {/* <div className='w-full flex items-center justify-start p-4 gap-3'>
