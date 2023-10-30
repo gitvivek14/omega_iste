@@ -3,6 +3,7 @@ import theka from "../assets/sponsors/yellow.png"
 import bookchor from "../assets/sponsors/bookchor.png"
 import younity from "../assets/sponsors/younity.png"
 import herody from "../assets/sponsors/herody.png"
+import wonder from "../assets/sponsors/wonder.jpg"
 export const SponsLinks = [
     {
         'title':'Coding Ninja',
@@ -37,7 +38,7 @@ export const SponsLinks = [
     {
         'title':'Wanderlooms',
         'description':"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inc",
-        'path':'https://www.wanderlooms.com/cdn/shop/files/Wanderlooms_black_848bf57c-454a-43a9-b9a9-0e54b9e4f331.png?v=1671802163',
+        'path':wonder,
         'color':'shadow-yellow-500'
     },
 ]
