@@ -1,5 +1,6 @@
 import { toast } from "react-hot-toast";
 import {apiconnector} from "../apiConnector"
+import {setLoading} from "../../slices/userSlice"
 
 
 export function registeruser(fullname,rollno,email,phone,cemail){
