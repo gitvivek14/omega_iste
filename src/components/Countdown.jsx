@@ -10,7 +10,11 @@ const getTimeLeft = () => {
 	const minutes = Math.floor((totalTimeLeft / (1000 * 60)) % 60);
 	const seconds = Math.floor((totalTimeLeft / 1000) % 60);
 	if(days<0){
-		return {0,0,0,0};
+		const days = 0.0;
+	const hours = 0.0;
+	const minutes = 0.0;
+	const seconds = 0.0;
+		return {days,hours,minutes,seconds};
 	}else{
 		return { days, hours, minutes, seconds };	
 	}
