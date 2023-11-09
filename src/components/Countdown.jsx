@@ -9,7 +9,12 @@ const getTimeLeft = () => {
 	const hours = Math.floor((totalTimeLeft / (1000 * 60 * 60)) % 24);
 	const minutes = Math.floor((totalTimeLeft / (1000 * 60)) % 60);
 	const seconds = Math.floor((totalTimeLeft / 1000) % 60);
-	return { days, hours, minutes, seconds };
+	if(days<0){
+		return (0,0,0,0);
+	}else{
+		return { days, hours, minutes, seconds };	
+	}
+	
 };
 
 const Countdown = () => {
