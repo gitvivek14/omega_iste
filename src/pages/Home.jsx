@@ -35,6 +35,11 @@ const Home = () => {
     // const [overlay, setOverlay] = React.useState(<OverlayOne />)
   
   return (
+
+      <div>
+          <h1>Site is Temporarily Down</h1>
+          return;
+      </div>
     
     <div className='w-full h-full' id='home'>
     <div className='flex flex-col items-center justify-center w-full mx-auto relative mt-36'>
